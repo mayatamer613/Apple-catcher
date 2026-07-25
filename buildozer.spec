@@ -9,17 +9,20 @@ package.name = applecatcher
 # (str) Package domain (needed for android packaging)
 package.domain = org.apple
 
+# (str) Where your source code is located
+source.dir = .
+
 # (list) Source files to include (let it include python files and assets)
 source.include_exts = py,png,jpg,kv,atlas,ttf
+
+# (str) Application versioning
+version = 0.1
 
 # (list) Application requirements
 requirements = python3,kivy
 
 # (str) Supported orientation (portrait, landscape or all)
 orientation = portrait
-
-# (list) Permissions
-#android.permissions = INTERNET
 
 # --- ANDROID SPECIFIC ---
 
@@ -28,9 +31,6 @@ android.api = 33
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
-
-# (str) Android NDK version to use
-#android.ndk_version = 25b
 
 # (bool) Use AndroidX support
 android.androidx = True

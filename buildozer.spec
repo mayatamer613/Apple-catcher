@@ -19,7 +19,7 @@ source.include_exts = py,png,jpg,kv,atlas,ttf
 version = 0.1
 
 # (list) Application requirements
-requirements = python3,kivy
+requirements = python3,pygame
 
 # (str) Supported orientation (portrait, landscape or all)
 orientation = portrait

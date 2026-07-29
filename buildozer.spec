@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = My Game
+title = Apple Catcher
 
 # (str) Package name
-package.name = mygame
+package.name = applecatcher
 
 # (str) Package domain (needed for android packaging)
-package.domain = org.test
+package.domain = org.apple
 
 # (str) Where your source code is located
 source.dir = .
@@ -19,7 +19,10 @@ source.include_exts = py,png,jpg,kv,atlas,ttf
 version = 0.1
 
 # (list) Application requirements
-requirements = python3,pygame,sdl2
+requirements = python3,pygame
+
+# (str) Custom icon of your application
+icon.filename = %(source.dir)s/logo.png
 
 # (str) Supported orientation
 orientation = portrait
@@ -35,6 +38,9 @@ android.ndk = 25b
 
 # (bool) Accept SDK licenses automatically
 android.accept_sdk_license = True
+
+# (bool) Use AndroidX support
+android.androidx = True
 
 [buildozer]
 

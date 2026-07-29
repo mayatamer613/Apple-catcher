@@ -23,7 +23,7 @@ jobs:
     - name: Set up Swap Space
       uses: pierotofy/set-swap-space@master
       with:
-        swap-size-gb: 10
+        swap-size-gb: 25
 
     - name: Install dependencies
       run: |
@@ -60,6 +60,11 @@ jobs:
     - name: Build with Buildozer
       run: yes | buildozer -v android debug
 
+    - name: Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: package
+        path: bin/*.apk
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
       with:

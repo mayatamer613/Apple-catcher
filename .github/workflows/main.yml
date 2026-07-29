@@ -21,7 +21,7 @@ jobs:
         python-version: '3.10'
 
     - name: Set up Swap Space
-      uses: pierotofy/set-up-swap@master
+      uses: pierotofy/set-swap-space@master
       with:
         swap-size-gb: 10
 

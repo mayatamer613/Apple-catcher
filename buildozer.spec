@@ -21,8 +21,8 @@ version = 0.1
 # (list) Application requirements
 requirements = python3,pygame,sdl2
 
-# (str) Custom icon of your application
-icon.filename = %(source.dir)s/logo.png
+# (str) Custom icon of your application (معطلة مؤقتاً لتجنب أخطاء الملفات المفقودة)
+# icon.filename = %(source.dir)s/logo.png
 
 # (str) Supported orientation
 orientation = portrait

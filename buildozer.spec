@@ -9,18 +9,20 @@ package.name = mygame
 # (str) Package domain (needed for android packaging)
 package.domain = org.test
 
-# (list) Source files to include (let it match python and assets)
+# (str) Where your source code is located
+source.dir = .
+
+# (list) Source files to include
 source.include_exts = py,png,jpg,kv,atlas,ttf
 
+# (str) Application versioning
+version = 0.1
+
 # (list) Application requirements
-# أضف هنا مكتبات بايثون التي تستخدمها لعبتك (مثل kivy أو pygame أو غيرها)
-requirements = python3,kivy
+requirements = python3,pygame,sdl2
 
-# (str) Supported orientations
+# (str) Supported orientation
 orientation = portrait
-
-# (list) Permissions
-android.permissions = INTERNET
 
 # (int) Target Android API
 android.api = 33
@@ -29,14 +31,14 @@ android.api = 33
 android.minapi = 21
 
 # (str) Android NDK version to use
-android.ndk = r25b
+android.ndk = 25b
 
-# (bool) قبول تراخيص الأندرويد تلقائياً لتفادى توقف البيلد
+# (bool) Accept SDK licenses automatically
 android.accept_sdk_license = True
 
 [buildozer]
 
-# (int) Log level (2 = debug with full output to track any error)
+# (int) Log level (2 = debug with full output)
 log_level = 2
 
 # (int) Display warning if buildozer is run as root

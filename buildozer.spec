@@ -19,7 +19,10 @@ source.include_exts = py,png,jpg,kv,atlas,ttf
 version = 0.1
 
 # (list) Application requirements
-requirements = python3,pygame
+requirements = python3,pygame,sdl2
+
+# (str) Custom icon of your application
+icon.filename = %(source.dir)s/logo.png
 
 # (str) Supported orientation (portrait, landscape or all)
 orientation = portrait
@@ -31,6 +34,9 @@ android.api = 33
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
+
+# (str) Android NDK version to use
+android.ndk = 25b
 
 # (bool) Use AndroidX support
 android.androidx = True

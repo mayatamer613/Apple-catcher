@@ -19,9 +19,9 @@ source.include_exts = py,png,jpg,kv,atlas,ttf
 version = 0.1
 
 # (list) Application requirements
-requirements = python3,pygame,sdl2
+requirements = python3,pygame
 
-# (str) Custom icon of your application (معطلة مؤقتاً لتجنب أخطاء الملفات المفقودة)
+# (str) Custom icon of your application
 # icon.filename = %(source.dir)s/logo.png
 
 # (str) Supported orientation
